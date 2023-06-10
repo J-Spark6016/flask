@@ -99,4 +99,3 @@ def map():
     else : # 진행중인 ip와 위치정보가 없을 때
         return error_page("잘못된접근입니다!")
 
-app.run(debug=False, port=5001)
