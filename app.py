@@ -42,7 +42,7 @@ def result():
 
     if request.method == 'POST':
         data = request.get_json() # 전송된 위치 데이터 가져오기
-        if not 'loction' in user_data[ip] :
+        if not 'location' in user_data[ip] :
             user_data[ip]['location'] = data
             user_data[ip]['dict'] = get_restaurants(user_data[ip]['location']['longitude'],user_data[ip]['location']['latitude'], float(user_data[ip]['range']))
 
